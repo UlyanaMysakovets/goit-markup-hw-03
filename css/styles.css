@@ -27,6 +27,21 @@
 
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 body {
     background-color: #fff;
     color: var(--primary-text-color);
@@ -39,13 +54,7 @@ body {
     list-style: none;
 }
 
-.logo {
-    color: var(--logo-color);
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-}
+
 
 .accent {
     color: var(--accent-color)
@@ -62,11 +71,49 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
+/* Header */
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+.page-header-container {
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.logo {
+    margin-right: 93px;
+    color: var(--logo-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
 
 .menu-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -96,17 +143,30 @@ img {
     color: var(--accent-color);
 }
 
+.contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contacts .item + .item {
+    margin-left: 50px;
+}
+
 /* hero */
 .hero {
     background-color: var(--background-dark-color);
+    text-align: center;
 }
 .hero-title {
+    margin-bottom: 30px;
+
     color: var(--hero-title-color);
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
 }
 
@@ -124,7 +184,22 @@ img {
 }
 
 /* section */
+
+.section {
+    padding-top: 94px;
+}
+
+.benefit-list {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}  
+ .elements {   
+  flex-basis: calc((100% - 90px) / 4);
+}
 .benefit-list .title {
+    margin-bottom: 10px;
+
     color: var(--primary-text-color);
     font-weight: 700;
     line-height: 1.14;
@@ -150,15 +225,53 @@ img {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 94px;
+    flex-wrap: wrap;
+}
+
+.imagine-fone {
+    flex-basis: calc((100% - 90px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.photo-cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.title {
+    padding-bottom: 10px;
 }
 
 .section-title {
+    margin-bottom: 50px;
+    
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
+
+.foto-item {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 94px;
+    flex-wrap: wrap;
+}
+
+.foto-elements {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+
 
 .imagine-fone {
     background-color: var(--hero-title-color); 
@@ -174,10 +287,15 @@ img {
 .button {
     color: var(--hero-title-color);
     background-color: var(--accent-color);
-
+    
 }
 
 .button.primary {
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+    
+
     color: var(--hero-title-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -188,8 +306,14 @@ img {
 }
 
 /*Портфоліо */
-
+.portfolio-ikon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    column-gap: 8px;
+}
 .portfolio-title {
+    padding-bottom: 4px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -203,8 +327,23 @@ img {
     line-height: 1.86;
 }
 
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+    padding-bottom: 94px;
+}
+
+.one-card {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+}
 
 .portfolio-list {
+    padding: 6px 22px;
+    border: 1px solid transparent;
+    
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -228,6 +367,9 @@ img {
 
 .page-footer {
     background-color: var(--background-dark-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 .logo-footer {
@@ -238,7 +380,13 @@ img {
     line-height: 1.19;
 }
 
+.adress-footer {
+    margin-top: 20px;
+}
+
 .footer-text {
+    padding-bottom: 9px;
+
     color: var(--hero-title-color);
     font-style: normal;
     line-height: 1.71;
@@ -255,3 +403,4 @@ line-height: 1.71;
 .footer-contact:focus {
     color: var(--accent-color);
 }
+
