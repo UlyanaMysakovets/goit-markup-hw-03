@@ -84,9 +84,12 @@ img {
     padding-right: 15px;
 }
 
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .page-header-container {
     display: flex;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .page-nav {
@@ -157,9 +160,13 @@ img {
 .hero {
     background-color: var(--background-dark-color);
     text-align: center;
+    padding: 200px 0;
 }
 .hero-title {
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
 
     color: var(--hero-title-color);
     font-family: 'Roboto';
@@ -187,6 +194,7 @@ img {
 
 .section {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .benefit-list {
@@ -202,6 +210,7 @@ img {
 
     color: var(--primary-text-color);
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
 }
 
@@ -231,8 +240,6 @@ img {
 .team-list {
     display: flex;
     gap: 30px;
-    padding-bottom: 94px;
-    flex-wrap: wrap;
 }
 
 .imagine-fone {
@@ -246,10 +253,6 @@ img {
 
 }
 
-.title {
-    padding-bottom: 10px;
-}
-
 .section-title {
     margin-bottom: 50px;
     
@@ -260,11 +263,18 @@ img {
     text-align: center;
 }
 
+.subtitle {
+    margin-bottom: 10px;
+}
+
 .foto-item {
     display: flex;
     gap: 30px;
-    padding-bottom: 94px;
     flex-wrap: wrap;
+}
+
+.caption {
+    padding-top: 0;
 }
 
 .foto-elements {
@@ -309,11 +319,11 @@ img {
 .portfolio-ikon {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     column-gap: 8px;
 }
 .portfolio-title {
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -332,17 +342,21 @@ img {
     flex-wrap: wrap;
     gap: 30px;
     flex-basis: calc((100% - 60px) / 3);
-    padding-bottom: 94px;
+    
 }
 
 .one-card {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-top: none;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-list {
     padding: 6px 22px;
     border: 1px solid transparent;
+    border-radius: 4px;
     
     font-family: Roboto, sans-serif;
     color: var(--primary-text-color);
@@ -385,11 +399,13 @@ img {
 }
 
 .footer-text {
-    padding-bottom: 9px;
-
     color: var(--hero-title-color);
     font-style: normal;
     line-height: 1.71;
+}
+
+.info {
+    margin-bottom: 9px;
 }
 
 .footer-contact {
