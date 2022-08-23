@@ -167,6 +167,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 696px;
+    text-transform: uppercase;
 
     color: var(--hero-title-color);
     font-family: 'Roboto';
